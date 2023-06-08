@@ -219,3 +219,23 @@ body {
     padding: 20px 0;
     z-index: 3;
 }
+
+.scoreDisplay {
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.scoreDisplayTwo {
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 40px;
+}

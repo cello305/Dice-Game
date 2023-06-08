@@ -77,24 +77,27 @@ const rollDice = (diceElement, random) => {
 
 const winCondition = () => {
     const resultElement = document.getElementById('winningCondition');
+    const playerScore = document.getElementById('scoreDisplay');
+    const playerScoreTwo = document.getElementById('scoreDisplayTwo');
 
     if (randomDiceValue > randomDiceTwoValue) {
         resultElement.textContent = "Dice 1 Wins !";
 
         playerOneScore = playerOneScore + 1; //counts each round first dice has won
-        console.log(playerOneScore + '  player one won the round');
+        playerScore.textContent = "Score: " + playerOneScore;
 
     } else if (randomDiceValue < randomDiceTwoValue) {
         resultElement.textContent = "Dice 2 Wins !";
 
         playerTwoScore = playerTwoScore + 1; //counts each round second dice has won
-        console.log(playerTwoScore + '  player two won');
+        playerScoreTwo.textContent = "Score: " + playerTwoScore;
 
     } else {
         resultElement.textContent = "Tie.";
-
         playerOneScore = playerOneScore + 1;
         playerTwoScore = playerTwoScore + 1;
+        playerScore.textContent = "Score: " + playerOneScore;
+        playerScoreTwo.textContent = "Score: " + playerTwoScore;
     }
 }
 
