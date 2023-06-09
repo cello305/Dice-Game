@@ -1,7 +1,5 @@
 # Dice-Game
 
-
-
 Dice Game is a web based two player dice rolling game using HTML, CSS and Javascript
 
 Completed functionalities:
