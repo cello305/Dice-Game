@@ -16,7 +16,6 @@ body {
     align-items: center;
     justify-content: center;
     background: #5a86a2;
-    ;
 }
 
 .container {
@@ -220,22 +219,20 @@ body {
     z-index: 3;
 }
 
-.scoreDisplay {
-    padding-bottom: 20px;
+.score-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     color: #333333;
-    margin-bottom: 40px;
 }
 
-.scoreDisplayTwo {
-    padding-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: #333333;
-    margin-bottom: 40px;
+.scoreDisplay {
+    margin: 0;
+    padding: 0;
 }

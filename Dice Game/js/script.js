@@ -76,11 +76,18 @@ const rollDice = (diceElement, random) => {
 }
 
 const winCondition = () => {
+    
     const resultElement = document.getElementById('winningCondition');
+
     const playerScore = document.getElementById('scoreDisplay');
     const playerScoreTwo = document.getElementById('scoreDisplayTwo');
 
-    if (randomDiceValue > randomDiceTwoValue) {
+    if (playerOneScore == 3 || playerTwoScore == 3){
+        rollBtn.disabled = true;
+        rollBtn2.disabled = true;
+    }
+    
+    else if (randomDiceValue > randomDiceTwoValue) {
         resultElement.textContent = "Dice 1 Wins !";
 
         playerOneScore = playerOneScore + 1; //counts each round first dice has won
