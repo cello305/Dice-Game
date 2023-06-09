@@ -16,7 +16,6 @@ body {
     align-items: center;
     justify-content: center;
     background: #5a86a2;
-    ;
 }
 
 .container {
@@ -218,4 +217,22 @@ body {
     background-color: rgb(255, 255, 255);
     padding: 20px 0;
     z-index: 3;
+}
+
+.score-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+}
+
+.scoreDisplay {
+    margin: 0;
+    padding: 0;
 }
